@@ -5,25 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lyublino</title>
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
-    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="header mt-1">
         <div class="container">
-            <div>
-                <a href="/" class="logo-link">
-                    <img src="./img/Logo.png" alt="logo" />
-                </a>
+            <div class="header__items">
+                <div style="margin-right: 25px;">
+                    <a href="#" class="logo-link">
+                        <img src="./img/Logo.svg" alt="logo" />
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="menu d-flex align-items-center">
+                        <li class="menu__item"><a href="#" class="menu__link">О&nbsp;нас</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Арендаторы</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="nav">
-                <ul class="menu">
-                  <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
-                  <li class="menu__item"><a href="#" class="menu__link">Арендаторы</a></li>
-                  <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
-                </ul>
-              </nav>
         </div>
     </header>
+    <main class="container">
+        <div class="main__promo d-flex">
+            <div class="main__title">
+                <h1>Найдёшь всё быстрее всех</h1>
+                <div class="main__title_button">
+                    <button class="main__btn">Подробнее</button>
+                </div>
+            </div>
+            <img src="./img/People.svg" alt="People">
+        </div>
+        <div class="main__bends">
+            <img src="./img/rectangle1.svg" alt="rectangle1">
+            <img src="./img/rectangle2.svg" alt="rectangle2">
+            <img src="./img/rectangle3.svg" alt="rectangle3">
+            <img src="./img/rectangle4.svg" alt="rectangle4">
+        </div>
+    </main>
 </body>
 </html>
