@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header mt-1">
+    <header class="header">
         <div class="container">
             <div class="header__items">
                 <div style="margin-right: 25px;">
@@ -21,7 +21,7 @@
                     </a>
                 </div>
                 <nav class="nav">
-                    <ul class="menu d-flex align-items-center">
+                    <ul class="menu d-flex">
                         <li class="menu__item"><a href="#" class="menu__link">О&nbsp;нас</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">Арендаторы</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
@@ -35,17 +35,46 @@
             <div class="main__title">
                 <h1>Найдёшь всё быстрее всех</h1>
                 <div class="main__title_button">
-                    <button class="main__btn">Подробнее</button>
+                    <button class="btn main__btn">Подробнее</button>
                 </div>
             </div>
             <img src="./img/People.svg" alt="People">
         </div>
         <div class="main__bends">
-            <img src="./img/rectangle1.svg" alt="rectangle1">
-            <img src="./img/rectangle2.svg" alt="rectangle2">
-            <img src="./img/rectangle3.svg" alt="rectangle3">
-            <img src="./img/rectangle4.svg" alt="rectangle4">
+           <img  class="rectangles" src="./img/rectangles.svg" alt="rectangles">
         </div>
     </main>
+    <section class="container">
+        <div class="about">
+            <h2 class="about__title">О нас</h2>
+            <p class="about__text">Равным образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке дальнейших направлений развития. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание дальнейших направлений развития.</p>
+        </div>
+        <div class="carousel">
+            <button class="arrow prev"><img src="./img/leftArrow.svg" alt="leftArrow"></button>
+            <button class="arrow prev"><img src="./img/rightArrow.svg" alt="rightArrow"></button>
+            <div class="gallery">
+                <ul class="gallery__list">
+                    <li class="gallery__item"><img src="./img/photo1.jpg" alt="photo1"></li>
+                    <li class="gallery__item"><img src="./img/photo2.jpg" alt="photo2"></li>
+                    <li class="gallery__item"><img src="./img/photo2.jpg" alt="photo2"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="tenants">
+            <h2 class="tenants__title">Арендаторы</h2>
+            <p class="tenants__text">Равным образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке дальнейших направлений развития. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание дальнейших направлений развития.</p>
+            <div class="tenants__list">
+                <ul class="tenants__items">
+                    <li class="tenants__item"><img src="./img/dns.jpg" alt="dns"></li>
+                    <li class="tenants__item"><img src="./img/online.ru.jpg" alt="online"></li>
+                    <li class="tenants__item"><img src="./img/kopirka.jpg" alt="kopirka"></li>
+                    <li class="tenants__item"><img src="./img/fourpaws.jpg" alt="fourpaws"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="tenants__button">
+            <button class="btn tenants__btn">Все арендаторы</button>
+        </div>
+    </section>
 </body>
 </html>
