@@ -10,11 +10,38 @@
   src: url(../fonts/Concrete-Regular.woff) format("woff2"); 
   src: url(../fonts/Concrete-Regular.woff2) format("woff2"); 
 }
-body, h2 {
-    margin: 0;
+body {
+  margin: 0;
+}
+img {
+	max-width: 100%;
+}
+h2 {
+  font-family: "Concrete-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 114px;
+  letter-spacing: 0.02em;
+  color: #33738F;
+}
+p {
+  margin: 0;
+  max-width: 877px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 118.5%;
+  letter-spacing: 0.02em;
+  color: #141414;
 }
 li {
   list-style: none;
+}
+.header__wraper-img{
+  margin-right: 35px;
+  margin-left: 17px;
 }
 .header__items {
   max-width: 100%;
@@ -33,6 +60,8 @@ li {
   display: flex;
   align-items: center;
   height: 96px;
+  width: 372px;
+  min-width: 150px;
   border-right: 0.5px solid #aaa;
 }
 .menu__item:first-child {
@@ -48,7 +77,7 @@ li {
   background-color: #33738F;
 }
 .menu__link {
-  padding: 45px 143px;
+  margin: auto;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -56,12 +85,11 @@ li {
   color: #474747;
   text-decoration: none;
 }
-.menu__link:hover {
-  color: #fff;
-}
-.main__title > h1 {
+.main__title {
   margin-top: 135px;
   margin-bottom: 15px;
+}
+.main__title > h1 {
   font-family: "Concrete-Regular";
   font-style: normal;
   font-weight: normal;
@@ -93,27 +121,6 @@ li {
 }
 .rectangles {
   max-width: 100%;
-}
-h2 {
-  font-family: "Concrete-Regular";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 96px;
-  line-height: 114px;
-  letter-spacing: 0.02em;
-  color: #33738F;
-}
-p {
-  margin: 0;
-  margin-top: 20px;
-  max-width: 877px;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 118.5%;
-  letter-spacing: 0.02em;
-  color: #141414;
 }
 
 /* carousel */
@@ -233,3 +240,50 @@ button.arrow {
  .footer__menu:last-child {
    margin-left: 200px;
  }
+
+
+@media screen and (max-width: 1439.98px) {
+  .menu__item {
+	width: 272px;
+  }
+  .main__title > h1 {
+	font-size: 76px;
+	line-height: 86px;
+  }
+  .carousel {
+    width: 1100px;
+	}
+	h2 {
+		margin: 0;
+		font-size: 60px;
+	}
+	.footer__contacts_item {
+		font-size: 26px;
+	}
+	.footer__networks {
+    margin-right: 100px;
+	}
+	.footer__menu:last-child {
+    margin-left: 100px;
+	}
+} 	
+@media screen and (max-width: 1199.98px) {
+	.menu__item {
+		width: 212px;
+		}
+	.main__title {
+		margin-top: 60px;
+		margin-bottom: 30px;
+	}
+	.main__title > h1 {
+		margin-bottom: 0;
+		font-size: 65px;
+		line-height: 118.5%;
+	}
+	.carousel {
+    width: 900px;
+	}
+	.tenants {
+    margin-top: 76px;
+}
+}
