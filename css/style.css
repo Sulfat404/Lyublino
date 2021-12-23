@@ -145,10 +145,13 @@ li {
   position: relative;
 }
 button.arrow {
-  margin-right: 65.5px;
+  margin-right: 10px;
   background-color: white;
   border: 0px solid #fff;
   cursor: pointer;
+}
+button.arrow:last-child {
+  margin-right: 0;
 }
 .gallery {
   overflow: hidden;
@@ -226,6 +229,7 @@ button.arrow {
   color: #FFFFFF;
 }
 .footer__networks {
+  margin-left: 25px;
   margin-right: 328px;
 }
 .footer__networks_items {
@@ -412,9 +416,6 @@ button.arrow {
   .footer__contacts_items {
     margin: 0;
     padding: 10px;
-  }
-  .footer__networks {
-    padding: 20px;
   }
 }
 @media (max-width: 575.98px) {
