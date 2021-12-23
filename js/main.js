@@ -10,7 +10,7 @@ menu.addEventListener('mouseover', event => {
 menu.addEventListener('mouseout', event => {
     if (event.target.classList.contains('menu__item')) {
         let link = event.target.children[0];
-        link.style.color = '#474747';
+        link.style.color = '#33738F';
     }
 });
 
@@ -21,7 +21,7 @@ const list = carousel.querySelector('ul');
 const listElem = carousel.querySelectorAll('li');
 const btnNext = carousel.querySelector('.next');
 const btnPrev = carousel.querySelector('.prev');
-const width = 583; 
+const width = 319; 
 const count = 1;
 let position = 0;
 
@@ -39,4 +39,30 @@ function moveNext() {
     position -= width * count;
     position = Math.max(position, -width * (listElem.length - count));
     list.style.marginLeft = position + 'px';
-};
+}
+
+
+
+// burger menu
+
+let hamb = document.querySelector(".header__hamb");
+let navMenu = document.querySelector(".menu");
+let header = document.querySelector(".header");
+const logo = document.querySelector('.header_logo-new');
+
+hamb.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    console.log("fddd");
+    hamb.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    header.classList.toggle("active");
+}
+
+const navLink = document.querySelectorAll(".header_link");
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamb.classList.remove("active");
+    navMenu.classList.remove("active");
+}
