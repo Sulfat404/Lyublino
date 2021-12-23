@@ -20,7 +20,7 @@
                         <img src="./img/Logo.svg" alt="logo" />
                     </a>
                 </div>
-                <nav class="nav">
+                <nav class="nav d-sm-none d-lg-block">
                     <ul class="menu d-flex">
                         <li class="menu__item"><a href="#" class="menu__link">О&nbsp;нас</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">Арендаторы</a></li>
@@ -31,14 +31,14 @@
         </div>
     </header>
     <main class="container">
-        <div class="main__promo d-flex">
-            <div class="main__title">
+        <div class="main__promo d-flex flex-sm-column flex-lg-row  justify-content-center">
+            <div class="main__title col-xs-12 col-lg-6">
                 <h1>Найдёшь всё быстрее всех</h1>
-                <div class="main__title_button">
+                <div class="main__title_button mt-sm-4 d-flex justify-content-sm-center justify-content-md-start">
                     <button class="btn main__btn ">Подробнее</button>
                 </div>
             </div>
-            <div class="col-md-5 col-lg-6">
+            <div class="col-sm-12 col-lg-6">
                 <img src="./img/People.svg" alt="People" >
             </div>
         </div>
@@ -75,11 +75,11 @@
             <h2 class="tenants__title">Арендаторы</h2>
             <p class="tenants__text">Равным образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке дальнейших направлений развития. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание дальнейших направлений развития.</p>
             <div class="tenants__list">
-                <ul class="tenants__items">
-                    <li class="tenants__item"><img src="./img/dns.jpg" alt="dns"></li>
-                    <li class="tenants__item"><img src="./img/online.ru.jpg" alt="online"></li>
-                    <li class="tenants__item"><img src="./img/kopirka.jpg" alt="kopirka"></li>
-                    <li class="tenants__item"><img src="./img/fourpaws.jpg" alt="fourpaws"></li>
+                <ul class="tenants__items flex-sm-wrap flex-lg-nowrap">
+                    <li class="tenants__item col-sm-6 col-lg-3 mb-sm-3 mb-lg-0"><img src="./img/dns.jpg" alt="dns"></li>
+                    <li class="tenants__item col-sm-6 col-lg-3 mb-sm-3 mb-lg-0"><img src="./img/online.ru.jpg" alt="online"></li>
+                    <li class="tenants__item col-sm-6 col-lg-3"><img src="./img/kopirka.jpg" alt="kopirka"></li>
+                    <li class="tenants__item col-sm-6 col-lg-3"><img src="./img/fourpaws.jpg" alt="fourpaws"></li>
                 </ul>
             </div>
         </div>
@@ -90,8 +90,8 @@
     <footer class="container">
         <div class="footer">
             <h2 class="footer__title">Контакты</h2>
-            <div class="footer__contacts">
-                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A67d783e11ee25c6c6e41d51817917e648bd09cfa714db9a78461211793b14054&amp;source=constructor" width="825" height="617" frameborder="0"></iframe>
+            <div class="footer__contacts flex-sm-column flex-md-row align-items-sm-start align-items-md-center">
+                    <iframe class="col-sm-12 col-md-7" src="https://yandex.ru/map-widget/v1/?um=constructor%3A67d783e11ee25c6c6e41d51817917e648bd09cfa714db9a78461211793b14054&amp;source=constructor" width="825" height="617" frameborder="0"></iframe>
                 <div class="footer__list">
                     <ul class="footer__contacts_items">
                         <li class="footer__contacts_item">8(999) 999-9999</li>
@@ -100,7 +100,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="d-flex mt-5 align-items-center">
+            <div class="d-flex mt-5 align-items-sm-start align-items-lg-center flex-sm-column-reverse flex-md-row">
                 <div class="footer__networks">
                     <a href="#"><img src="./img/LogoWhite.svg" alt="Logo"></a>
                     <div class="footer__networks_list">
@@ -123,7 +123,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="footer__menu">
+                <div class="footer__menu d-flex order-sm-1">
                     <ul class="footer__items">
                         <li class="footer__item">
                             <a class="footer__item_link" href="#">Главная</a>
