@@ -203,6 +203,7 @@ button.arrow {
 
 .footer {
   margin-top: 84px;
+  padding: 0;
   height: 1100px;
   background-color:#33738F;
 }
@@ -369,7 +370,7 @@ button.arrow {
     font-size: 48px;
     line-height: 118.5%;
     letter-spacing: 0.02em;
-    color: #33738F;
+    color: #474747;
   }
   /* end menu burger */
   .main__title {

@@ -10,7 +10,7 @@ menu.addEventListener('mouseover', event => {
 menu.addEventListener('mouseout', event => {
     if (event.target.classList.contains('menu__item')) {
         let link = event.target.children[0];
-        link.style.color = '#33738F';
+        link.style.color = '#474747';
     }
 });
 
@@ -59,8 +59,8 @@ function mobileMenu() {
     header.classList.toggle("active");
 }
 
-const navLink = document.querySelectorAll(".header_link");
-navLink.forEach(n => n.addEventListener("click", closeMenu));
+const menuLink = document.querySelectorAll(".menu__link");
+menuLink.forEach(n => n.addEventListener("click", closeMenu));
 
 function closeMenu() {
     hamb.classList.remove("active");
