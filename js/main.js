@@ -44,19 +44,21 @@ function moveNext() {
 
 
 // burger menu
-
-let hamb = document.querySelector(".header__hamb");
-let navMenu = document.querySelector(".menu");
-let header = document.querySelector(".header");
-const logo = document.querySelector('.header_logo-new');
+const header = document.querySelector(".header");
+const hamb = header.querySelector(".header__hamb");
+const navMenu = header.querySelector(".menu");
+const logo = header.querySelector('.header_logo-new');
+const navbarIconSvg = header.querySelector('.navbar__icon_items');
+const logoImg = header.querySelector('.header_logo-new');
 
 hamb.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
-    console.log("fddd");
     hamb.classList.toggle("active");
     navMenu.classList.toggle("active");
     header.classList.toggle("active");
+    navbarIconSvg.classList.toggle("active");
+    logoImg.classList.toggle("d-none");
 }
 
 const menuLink = document.querySelectorAll(".menu__link");
@@ -65,4 +67,7 @@ menuLink.forEach(n => n.addEventListener("click", closeMenu));
 function closeMenu() {
     hamb.classList.remove("active");
     navMenu.classList.remove("active");
+    header.classList.remove("active");
+    navbarIconSvg.classList.remove("active");
+    logoImg.classList.remove("d-none");
 }
